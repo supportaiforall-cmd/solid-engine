@@ -18,6 +18,15 @@
 
 Full dated history, commit by commit, lives in [`CHANGELOG.md`](./CHANGELOG.md).
 
+## Documentation
+
+| Document | Contents |
+| --- | --- |
+| [`README.md`](./README.md) | What STARWAKE is, how it plays, what changed |
+| [`DESIGN.md`](./DESIGN.md) | Design tokens, layout system, components, behaviour, accessibility rules |
+| [`CHANGELOG.md`](./CHANGELOG.md) | Dated history, entry by entry |
+| [`assets/`](./assets) | QR codes for the live page: light, dark, and print SVG |
+
 ## The run
 
 The ship accelerates continuously. Thread data shards through the ship's nose to build score, restore integrity, and recharge boost. Sentinel impacts damage the ship, while the Matrix AI co-pilot calls out the state of the run and helps route recovery opportunities.
