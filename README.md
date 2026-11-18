@@ -16,6 +16,8 @@
 - **Mobile.** Single-column tester and lab layouts, repositioned hero art for narrow screens, and a static co-pilot ticker instead of a sticky one.
 - **Accessibility.** Visible `:focus-visible` rings on every interactive element and a `prefers-reduced-motion` fallback that disables transitions and smooth scrolling.
 
+Full dated history, commit by commit, lives in [`CHANGELOG.md`](./CHANGELOG.md).
+
 ## The run
 
 The ship accelerates continuously. Thread data shards through the ship's nose to build score, restore integrity, and recharge boost. Sentinel impacts damage the ship, while the Matrix AI co-pilot calls out the state of the run and helps route recovery opportunities.
