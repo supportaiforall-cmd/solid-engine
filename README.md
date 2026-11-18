@@ -4,16 +4,17 @@
 
 > **Playable now:** [Launch STARWAKE](https://supportaiforall-cmd.github.io/solid-engine/STARWAKE%20Space.html)
 
-## What changed
+## Recent design changes
 
-The latest release gives the STARWAKE landing experience a more cinematic cockpit direction while keeping the game controls and interactive systems intact. The visual refresh includes:
+**November 2026 · commit [`b6319ae`](https://github.com/supportaiforall-cmd/solid-engine/commit/b6319ae034007783f0309eb0c851ff303d05144f)** The landing page was reworked around a cinematic cockpit direction. The game itself, its controls, and every interactive system were left untouched.
 
-- A stronger hero composition with clearer Play and How to Fly actions
-- A green-grid cockpit aesthetic with layered gradients, scan textures, and system readouts
-- More deliberate spacing and hierarchy across the controls, co-pilot, systems, and studio sections
-- Deeper card surfaces, responsive borders, hover states, and status treatments
-- Improved mobile layouts for touch controls, ship systems, and the co-pilot ticker
-- Visible keyboard focus states and reduced-motion support for a more accessible experience
+- **Hero.** Larger wordmark, a bordered kicker badge, heavier shade and scan overlays on the key art, and clearer Play / How to Fly calls to action.
+- **Atmosphere.** A fixed green grid overlay, layered radial gradients behind the page, and a bottom fade that seats the hero into the first section.
+- **Sections.** Numbered index labels with a hairline accent rule, a tighter heading hierarchy, and more generous vertical rhythm between blocks.
+- **Cards.** Deeper gradient surfaces with hairline top accents and a subtle lift on hover across controls, ship systems, and shelf slots.
+- **Instrumentation.** The systems lab and tester panels sit on a darker plate with clearer button hover and pressed states.
+- **Mobile.** Single-column tester and lab layouts, repositioned hero art for narrow screens, and a static co-pilot ticker instead of a sticky one.
+- **Accessibility.** Visible `:focus-visible` rings on every interactive element and a `prefers-reduced-motion` fallback that disables transitions and smooth scrolling.
 
 ## The run
 
