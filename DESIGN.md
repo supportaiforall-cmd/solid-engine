@@ -48,7 +48,7 @@ Effective values, as declared in the refresh block:
 | `--green-hi` | `#b5ffd0` | Interactive text, links, highlights |
 | `--ink` | `#eef8f1` | Primary text |
 | `--ink-dim` | `#a9bbb0` | Body copy |
-| `--ink-faint` | `#657a6e` | Labels, metadata, captions |
+| `--ink-faint` | `#7b9484` | Labels, metadata, captions (raised from `#657a6e` to clear AA on cards) |
 | `--amber` | `#ffd166` | Boost, core systems, co-pilot numerals |
 | `--red` | `#ff5365` | Damage, sentinel, destructive action |
 
@@ -159,7 +159,7 @@ When adding behaviour, reuse the existing ID naming pattern (`bar*` / `val*` pai
 
 - Focus: a global `:focus-visible` rule draws a 2px `--green-hi` outline with 4px offset. The steering pad also carries its own focus ring.
 - Motion: the reduced-motion query neutralises transitions and animation durations, and the ticker script skips its interval entirely rather than shortening it.
-- Contrast: body copy uses `--ink-dim` on near-black surfaces, comfortably above 4.5:1. Labels at 11px pair the monospace face with wide tracking rather than low opacity, so they stay readable. Avoid dropping opacity below 0.7 on text.
+- Contrast: body copy uses `--ink-dim` on near-black surfaces at 10.05:1 on the page and 8.55:1 on cards. Small labels use `--ink-faint`, which measures 6.18:1 on the page and 5.26:1 on card surfaces after the November contrast fix. Labels at 11px pair the monospace face with wide tracking rather than low opacity, so they stay readable. Avoid dropping opacity below 0.7 on text.
 - Semantics: the steering pad is a focusable `role="application"` region with a visible instruction line; the ticker panel has an `aria-label` describing its content.
 - Touch: primary controls are at least 44px tall. The hero, play band, and shelf CTAs are plain anchors, so they work without pointer precision.
 
