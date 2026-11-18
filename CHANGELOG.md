@@ -10,6 +10,13 @@ Notable changes to the STARWAKE project, newest first. Each entry names the comm
 
 - Expanded the README design summary into a dated **Recent design changes** section with a link to the design commit and notes grouped by area: hero, atmosphere, sections, cards, instrumentation, mobile, and accessibility. (`861c158`)
 - Added this changelog, covering the project's commits to date rather than only the design refresh.
+- Added `DESIGN.md`, a design and layout reference covering tokens, type scale, layout, components, script behaviour, accessibility, and the deploy loop. (`0e411fa`)
+- Added QR codes for the live page as `assets/starwake-qr-light.png`, `assets/starwake-qr-dark.png`, and `assets/starwake-qr-print.svg`. All three were decoded back to the exact page URL before committing. (`c1408d5`)
+
+### Fixed
+
+- Small label text (`--ink-faint`) sat at 3.7:1 on card surfaces, failing WCAG AA. Raised from `#657a6e` to `#7b9484`, which measures 5.26:1 on cards and 6.18:1 on the page background. (`de5e0c0`)
+- Added a meta description plus `og:type`, `og:title`, and `og:description`, which the page previously lacked entirely. (`de5e0c0`)
 
 ---
 
